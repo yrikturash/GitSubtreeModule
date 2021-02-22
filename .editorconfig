@@ -1,0 +1,548 @@
+﻿# EditorConfig is awesome: http://EditorConfig.org
+
+# Remove the line below if you want to inherit .editorconfig settings from higher directories
+root = true
+
+# C# files
+[*.cs]
+
+#### Core EditorConfig Options ####
+
+# Indentation and spacing
+indent_size = 4
+indent_style = space
+tab_width = 4
+
+# New line preferences
+end_of_line = crlf
+insert_final_newline = false
+
+#### .NET Coding Conventions ####
+
+# Organize usings
+dotnet_separate_import_directive_groups = false
+dotnet_sort_system_directives_first = true
+
+# this. and Me. preferences
+dotnet_style_qualification_for_event = false:silent
+dotnet_style_qualification_for_field = false:silent
+dotnet_style_qualification_for_method = false:silent
+dotnet_style_qualification_for_property = false:silent
+
+# Language keywords vs BCL types preferences
+dotnet_style_predefined_type_for_locals_parameters_members = true:silent
+dotnet_style_predefined_type_for_member_access = true:silent
+
+# Parentheses preferences
+dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity:silent
+dotnet_style_parentheses_in_other_binary_operators = always_for_clarity:silent
+dotnet_style_parentheses_in_other_operators = never_if_unnecessary:silent
+dotnet_style_parentheses_in_relational_binary_operators = always_for_clarity:silent
+
+# Modifier preferences
+dotnet_style_require_accessibility_modifiers = for_non_interface_members:silent
+
+# Expression-level preferences
+dotnet_style_coalesce_expression = true:suggestion
+dotnet_style_collection_initializer = true:suggestion
+dotnet_style_explicit_tuple_names = true:suggestion
+dotnet_style_null_propagation = true:suggestion
+dotnet_style_object_initializer = true:suggestion
+dotnet_style_prefer_auto_properties = true:silent
+dotnet_style_prefer_compound_assignment = true:suggestion
+dotnet_style_prefer_conditional_expression_over_assignment = true:silent
+dotnet_style_prefer_conditional_expression_over_return = true:silent
+dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
+dotnet_style_prefer_inferred_tuple_names = true:suggestion
+dotnet_style_prefer_is_null_check_over_reference_equality_method = true:suggestion
+dotnet_style_prefer_simplified_interpolation = true:suggestion
+
+# Field preferences
+dotnet_style_readonly_field = true:suggestion
+
+# Parameter preferences
+dotnet_code_quality_unused_parameters = all:suggestion
+
+#### C# Coding Conventions ####
+
+# var preferences
+csharp_style_var_elsewhere = false:silent
+csharp_style_var_for_built_in_types = false:silent
+csharp_style_var_when_type_is_apparent = false:silent
+
+# Expression-bodied members
+csharp_style_expression_bodied_accessors = true:silent
+csharp_style_expression_bodied_constructors = false:silent
+csharp_style_expression_bodied_indexers = true:silent
+csharp_style_expression_bodied_lambdas = true:silent
+csharp_style_expression_bodied_local_functions = false:silent
+csharp_style_expression_bodied_methods = false:silent
+csharp_style_expression_bodied_operators = false:silent
+csharp_style_expression_bodied_properties = true:silent
+
+# Pattern matching preferences
+csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
+csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
+csharp_style_prefer_switch_expression = true:suggestion
+
+# Null-checking preferences
+csharp_style_conditional_delegate_call = true:suggestion
+
+# Modifier preferences
+csharp_prefer_static_local_function = true:suggestion
+csharp_preferred_modifier_order = public,private,protected,internal,static,extern,new,virtual,abstract,sealed,override,readonly,unsafe,volatile,async:silent
+
+# Code-block preferences
+csharp_prefer_braces = true:silent
+csharp_prefer_simple_using_statement = true:suggestion
+
+# Expression-level preferences
+csharp_prefer_simple_default_expression = true:suggestion
+csharp_style_deconstructed_variable_declaration = true:suggestion
+csharp_style_inlined_variable_declaration = true:suggestion
+csharp_style_pattern_local_over_anonymous_function = true:suggestion
+csharp_style_prefer_index_operator = true:suggestion
+csharp_style_prefer_range_operator = true:suggestion
+csharp_style_throw_expression = true:suggestion
+csharp_style_unused_value_assignment_preference = discard_variable:suggestion
+csharp_style_unused_value_expression_statement_preference = discard_variable:silent
+
+# 'using' directive preferences
+csharp_using_directive_placement = outside_namespace:silent
+
+#### C# Formatting Rules ####
+
+# New line preferences
+csharp_new_line_before_catch = true
+csharp_new_line_before_else = true
+csharp_new_line_before_finally = true
+csharp_new_line_before_members_in_anonymous_types = true
+csharp_new_line_before_members_in_object_initializers = true
+csharp_new_line_before_open_brace = all
+csharp_new_line_between_query_expression_clauses = true
+
+# Indentation preferences
+csharp_indent_block_contents = true
+csharp_indent_braces = false
+csharp_indent_case_contents = true
+csharp_indent_case_contents_when_block = true
+csharp_indent_labels = one_less_than_current
+csharp_indent_switch_labels = true
+
+# Space preferences
+csharp_space_after_cast = false
+csharp_space_after_colon_in_inheritance_clause = true
+csharp_space_after_comma = true
+csharp_space_after_dot = false
+csharp_space_after_keywords_in_control_flow_statements = true
+csharp_space_after_semicolon_in_for_statement = true
+csharp_space_around_binary_operators = before_and_after
+csharp_space_around_declaration_statements = false
+csharp_space_before_colon_in_inheritance_clause = true
+csharp_space_before_comma = false
+csharp_space_before_dot = false
+csharp_space_before_open_square_brackets = false
+csharp_space_before_semicolon_in_for_statement = false
+csharp_space_between_empty_square_brackets = false
+csharp_space_between_method_call_empty_parameter_list_parentheses = false
+csharp_space_between_method_call_name_and_opening_parenthesis = false
+csharp_space_between_method_call_parameter_list_parentheses = false
+csharp_space_between_method_declaration_empty_parameter_list_parentheses = false
+csharp_space_between_method_declaration_name_and_open_parenthesis = false
+csharp_space_between_method_declaration_parameter_list_parentheses = false
+csharp_space_between_parentheses = false
+csharp_space_between_square_brackets = false
+
+# Wrapping preferences
+csharp_preserve_single_line_blocks = true
+csharp_preserve_single_line_statements = true
+
+#### Naming styles ####
+
+# Naming rules
+
+dotnet_naming_rule.interface_should_be_begins_with_i.severity = suggestion
+dotnet_naming_rule.interface_should_be_begins_with_i.symbols = interface
+dotnet_naming_rule.interface_should_be_begins_with_i.style = begins_with_i
+
+dotnet_naming_rule.types_should_be_pascal_case.severity = suggestion
+dotnet_naming_rule.types_should_be_pascal_case.symbols = types
+dotnet_naming_rule.types_should_be_pascal_case.style = pascal_case
+
+dotnet_naming_rule.non_field_members_should_be_pascal_case.severity = suggestion
+dotnet_naming_rule.non_field_members_should_be_pascal_case.symbols = non_field_members
+dotnet_naming_rule.non_field_members_should_be_pascal_case.style = pascal_case
+
+# Symbol specifications
+
+dotnet_naming_symbols.interface.applicable_kinds = interface
+dotnet_naming_symbols.interface.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
+dotnet_naming_symbols.interface.required_modifiers =
+
+dotnet_naming_symbols.types.applicable_kinds = class, struct, interface, enum
+dotnet_naming_symbols.types.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
+dotnet_naming_symbols.types.required_modifiers =
+
+dotnet_naming_symbols.non_field_members.applicable_kinds = property, event, method
+dotnet_naming_symbols.non_field_members.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
+dotnet_naming_symbols.non_field_members.required_modifiers =
+
+dotnet_naming_rule.private_members_with_underscore.symbols  = private_members
+dotnet_naming_rule.private_members_with_underscore.style    = underscore_prefix
+dotnet_naming_rule.private_members_with_underscore.severity = suggestion
+
+dotnet_naming_symbols.private_members.applicable_kinds           = field
+dotnet_naming_symbols.private_members.applicable_accessibilities = private
+dotnet_naming_symbols.private_members.required_modifiers         = readonly
+
+dotnet_naming_style.underscore_prefix.capitalization = camel_case
+dotnet_naming_style.underscore_prefix.required_prefix = _
+dotnet_naming_style.underscore_prefix.required_suffix = 
+dotnet_naming_style.underscore_prefix.word_separator = 
+
+# Naming styles
+
+dotnet_naming_style.pascal_case.required_prefix =
+dotnet_naming_style.pascal_case.required_suffix =
+dotnet_naming_style.pascal_case.word_separator =
+dotnet_naming_style.pascal_case.capitalization = pascal_case
+
+dotnet_naming_style.begins_with_i.required_prefix = I
+dotnet_naming_style.begins_with_i.required_suffix =
+dotnet_naming_style.begins_with_i.word_separator =
+dotnet_naming_style.begins_with_i.capitalization = pascal_case
+
+
+### Configuration for IDE code style by diagnostic IDs ###
+[*.{cs,vb}]
+
+dotnet_analyzer_diagnostic.category-Style.severity = warning
+
+# IDE0001: Name can be simplified
+dotnet_diagnostic.IDE0001.severity = silent
+
+# IDE0002: Name can be simplified
+dotnet_diagnostic.IDE0002.severity = silent
+
+# IDE0003: Name can be simplified
+dotnet_diagnostic.IDE0003.severity = silent
+
+# IDE0005: Using directive is unnecessary.
+dotnet_diagnostic.IDE0005.severity = error
+
+# IDE0007: Use 'var' instead of explicit type
+dotnet_diagnostic.IDE0007.severity = silent
+
+# IDE0008: Use explicit type instead of 'var'
+dotnet_diagnostic.IDE0008.severity = silent
+
+# IDE0010: Add missing cases in switch statement
+dotnet_diagnostic.IDE0010.severity = silent
+
+# IDE0017: Object initialization can be simplified
+dotnet_diagnostic.IDE0017.severity = silent
+
+# IDE0034: 'default' expression can be simplified
+dotnet_diagnostic.IDE0034.severity = silent
+
+# IDE0045: 'if' statement can be simplified
+dotnet_diagnostic.IDE0045.severity = silent
+
+# IDE0046: 'if' statement can be simplified
+dotnet_diagnostic.IDE0046.severity = silent
+
+# IDE0048: Parentheses should be added for clarity
+dotnet_diagnostic.IDE0048.severity = silent
+
+# IDE0051: Remove unused private members
+dotnet_diagnostic.IDE0051.severity = error
+
+# IDE0058: Expression value is never used
+dotnet_diagnostic.IDE0058.severity = silent
+
+# IDE0065: Using directives must be placed outside of a namespace declaration
+# Can remove the below entry and turn it into a warning once https://github.com/dotnet/roslyn/issues/43271 is resolved.
+dotnet_diagnostic.IDE0065.severity = silent
+
+# IDE0066: Convert switch statement to expression
+dotnet_diagnostic.IDE0066.severity = suggestion
+
+# IDE0072: Populate switch
+dotnet_diagnostic.IDE0072.severity = silent
+
+# IDE0073: File header
+dotnet_diagnostic.IDE0073.severity = silent
+file_header_template = Copyright (c) Microsoft.  All Rights Reserved.  Licensed under the Apache License, Version 2.0.  See License.txt in the project root for license information.
+
+#### Configuration for FxCop analyzers executed on this repo ####
+# https://docs.microsoft.com/uk-ua/visualstudio/code-quality/fxcop-rule-port-status?view=vs-2019
+# https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeQuality.Analyzers/Microsoft.CodeQuality.Analyzers.md
+# https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.NetCore.Analyzers/Microsoft.NetCore.Analyzers.md
+[*.cs]
+
+# Default analyzed API surface = 'all' (public APIs + non-public APIs)
+dotnet_code_quality.api_surface = all
+
+# Restrict the analyzed API surface for certain analyzers to 'public' (public APIs only).
+# CA1043: Use integral or string argument for indexers
+dotnet_code_quality.CA1043.api_surface = public
+# CA1707: Identifiers should not contain underscores
+dotnet_code_quality.CA1707.api_surface = public
+# CA1720: Identifiers should not contain type names
+dotnet_code_quality.CA1720.api_surface = public
+
+# Exclude single letter type parameter names
+# CA1715: Identifiers should have correct prefix
+dotnet_code_quality.CA1715.exclude_single_letter_type_parameters = true
+
+
+#### Configuration for StyleCop analyzers executed on this repo ####
+# https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/DOCUMENTATION.md
+
+#	Naming Rules (SA1300-)
+
+# SA1300: The name of a C# element does not begin with an upper-case letter.
+dotnet_diagnostic.SA1300.severity = error
+
+# SA1302: The name of a C# interface does not begin with the capital letter I.
+dotnet_diagnostic.SA1302.severity = error
+
+# SA1303: Const field names should begin with upper-case letter
+dotnet_diagnostic.SA1303.severity = error
+
+# SA1304: Non-private readonly fields should begin with upper-case letter
+dotnet_diagnostic.SA1304.severity = error
+
+# SA1307: Accessible fields should begin with upper-case letter
+dotnet_diagnostic.SA1307.severity = error
+
+# SA1308: Variable names should not be prefixed
+dotnet_diagnostic.SA1308.severity = error
+
+# SA1309: Field names should not begin with underscore
+dotnet_diagnostic.SA1309.severity = none
+
+# SA1310: Field names should not contain underscore
+dotnet_diagnostic.SA1310.severity = error
+
+# SA1311: Static readonly fields should begin with upper-case letter
+dotnet_diagnostic.SA1311.severity = error
+
+# SA1312: Variable names should begin with lower-case letter
+dotnet_diagnostic.SA1312.severity = error
+
+# SA1313: Parameter names should begin with lower-case letter
+dotnet_diagnostic.SA1313.severity = error
+
+#	Maintainability Rules (SA1400-)
+
+# SA1400: Access modifier should be declared
+dotnet_diagnostic.SA1400.severity = error
+
+# SA1401: Fields should be private
+dotnet_diagnostic.SA1401.severity = warning
+
+# SA1413: Use trailing comma in multi-line initializers
+dotnet_diagnostic.SA1413.severity = error
+
+#	Layout Rules (SA1500-)
+
+# SA1500: Braces for multi-line statements should not share line
+dotnet_diagnostic.SA1500.severity = error
+
+# SA1501: Statement should not be on a single line
+dotnet_diagnostic.SA1501.severity = warning
+
+# SA1502: Element should not be on a single line
+dotnet_diagnostic.SA1502.severity = warning
+
+# SA1503: Braces should not be omitted
+dotnet_diagnostic.SA1503.severity = error
+
+# SA1505: Opening braces should not be followed by blank line
+dotnet_diagnostic.SA1505.severity = warning
+
+# SA1516: Elements should be separated by blank line
+dotnet_diagnostic.SA1516.severity = warning
+
+# SA1520: Use braces consistently
+dotnet_diagnostic.SA1520.severity = error
+
+# SA1519: Braces should not be omitted from multi-line child statement
+dotnet_diagnostic.SA1519.severity = error
+
+# SA1513: Closing brace should be followed by blank line
+dotnet_diagnostic.SA1513.severity = warning
+
+#	Ordering Rules (SA1200-)
+
+# SA1210: Using directives should be ordered alphabetically by namespace
+dotnet_diagnostic.SA1210.severity = error
+
+# SA1211: Using alias directives should be ordered alphabetically by alias name
+dotnet_diagnostic.SA1211.severity = warning
+
+# SA1217: Using static directives should be ordered alphabetically
+dotnet_diagnostic.SA1217.severity = warning
+
+#	Naming Rules (SA1300-)
+
+# SA1130: Use lambda syntax
+dotnet_diagnostic.SA1130.severity = warning
+
+
+# SA1200: Using directives should be placed correctly
+dotnet_diagnostic.SA1200.severity = none
+
+# SA1208: SystemUsingDirectivesMustBePlacedBeforeOtherUsingDirectives
+dotnet_diagnostic.SA1208.severity = none
+
+# SA1633: File should have header
+dotnet_diagnostic.SA1633.severity = none
+
+# SA1101: Prefix local calls with this
+dotnet_diagnostic.SA1101.severity = none
+
+### Reliability warnings
+
+# CA2007: Consider calling ConfigureAwait on the awaited task
+dotnet_diagnostic.CA2007.severity = none
+
+###
+
+# CA1303: Do not pass literals as localized parameters
+dotnet_diagnostic.CA1303.severity = none
+
+### Performance warnings 
+
+# CA1804: Remove unused locals
+dotnet_diagnostic.CA1804.severity = warning
+
+# CA1823: Avoid unused private fields
+dotnet_diagnostic.CA1823.severity = warning
+
+###
+
+# CS1591: Missing XML comment for publicly visible type or member
+[*.designer.cs]
+dotnet_diagnostic.CS1591.severity = none
+
+############################################################################
+####                                                                    ####
+####                 SecurityCodeScan(SAST)                             ####
+####                                                                    ####
+############################################################################
+#### Configuration for SecurityCodeScan analyzers executed on this repo ####
+#### https://security-code-scan.github.io/
+#### Naming Rules (SCS0001-SCS0036)
+####
+[*.cs]
+
+# SCS0001: Command injection possible in {1} argument passed to '{0}'
+dotnet_diagnostic.SCS0001.severity = error
+
+# SCS0002: LINQ API: SQL injection possible in {1} argument passed to '{0}'
+dotnet_diagnostic.SCS0002.severity = error
+
+# SCS0003: XPath injection possible in {1} argument passed to '{0}'
+dotnet_diagnostic.SCS0003.severity = warning
+
+# SCS0004: Certificate Validation has been disabled
+dotnet_diagnostic.SCS0004.severity = warning
+
+# SCS0005: Weak random generator
+dotnet_diagnostic.SCS0005.severity = warning
+
+# SCS0006: Weak hashing function
+dotnet_diagnostic.SCS0006.severity = error
+
+# SCS0007: XML parsing vulnerable to XXE
+dotnet_diagnostic.SCS0007.severity = warning
+
+# SCS0008: The cookie is missing security flag Secure
+dotnet_diagnostic.SCS0008.severity = warning
+
+# SCS0009: The cookie is missing security flag HttpOnly
+dotnet_diagnostic.SCS0009.severity = warning
+
+# SCS0010: Weak cipher algorithm
+dotnet_diagnostic.SCS0010.severity = warning
+
+# SCS0011: CBC mode is weak
+dotnet_diagnostic.SCS0011.severity = warning
+
+# SCS0012: ECB mode is weak
+dotnet_diagnostic.SCS0012.severity = warning
+
+# SCS0013: Weak cipher mode
+dotnet_diagnostic.SCS0013.severity = warning
+
+# SCS0014: Possible SQL injection in {1} argument passed to '{0}'
+dotnet_diagnostic.SCS0014.severity = error
+
+# SCS0015: Hardcoded password
+dotnet_diagnostic.SCS0015.severity = error
+
+# SCS0016: Controller method is vulnerable to CSRF
+# silent due to we have APIs only and will handle it on gateway
+dotnet_diagnostic.SCS0016.severity = silent
+
+# SCS0017: Request validation disabled in base class
+dotnet_diagnostic.SCS0017.severity = warning
+
+# SCS0018: Path traversal: injection possible in {1} argument passed to '{0}'
+dotnet_diagnostic.SCS0018.severity = warning
+
+# SCS0019: OutputCache annotation is disabling authorization checks
+dotnet_diagnostic.SCS0019.severity = warning
+
+# SCS0020: OleDb API: SQL injection possible in {1} argument passed to '{0}'
+dotnet_diagnostic.SCS0020.severity = error
+
+# SCS0021: Request validation has been disabled in {0}({1}): {2}
+dotnet_diagnostic.SCS0021.severity = warning
+
+# SCS0022: Event validation is disabled in {0}({1}): {2}
+dotnet_diagnostic.SCS0022.severity = warning
+
+# SCS0023: View state is not encrypted in {0}({1}): {2}
+dotnet_diagnostic.SCS0023.severity = warning
+
+# SCS0024: View state mac is disabled in {0}({1}): {2}
+dotnet_diagnostic.SCS0024.severity = warning
+
+# SCS0025: Odbc API: SQL injection possible in {1} argument passed to '{0}'
+dotnet_diagnostic.SCS0025.severity = error
+
+# SCS0026: MsSQL Data Provider: SQL injection possible in {1} argument passed to '{0}'
+dotnet_diagnostic.SCS0026.severity = error
+
+# SCS0027: Open redirect: possibly unvalidated input in {1} argument passed to '{0}'
+dotnet_diagnostic.SCS0027.severity = warning
+
+# SCS0028: Possibly unsafe deserialization
+dotnet_diagnostic.SCS0028.severity = warning
+
+# SCS0029: Potential XSS vulnerability
+dotnet_diagnostic.SCS0029.severity = warning
+
+# SCS0030: Request validation is enabled only for pages, not for all HTTP requests. {0}({1}): {2}
+dotnet_diagnostic.SCS0030.severity = warning
+
+# SCS0031: Possible LDAP injection in {1} argument passed to '{0}'
+dotnet_diagnostic.SCS0031.severity = error
+
+# SCS0032: The RequiredLength property of PasswordValidator should be set to at least {0}
+dotnet_diagnostic.SCS0032.severity = warning
+
+# SCS0033: Less than {0} properties set in PasswordValidator declaration
+dotnet_diagnostic.SCS0033.severity = warning
+
+# SCS0034: The {0} property must be set
+dotnet_diagnostic.SCS0034.severity = warning
+
+# SCS0035: Possible SQL injection in {1} argument passed to '{0}'
+dotnet_diagnostic.SCS0035.severity = error
+
+# SCS0036: Possible SQL injection in {1} argument passed to '{0}'
+dotnet_diagnostic.SCS0036.severity = error
